@@ -24,7 +24,14 @@ namespace LDNotificationBadge.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-            UIApplication.SharedApplication.ApplicationIconBadgeNumber = 1;
+
+            int numero = 0;
+            if (LDNotificationBadge.NotificationBadge.num !=0)
+            {
+                numero = LDNotificationBadge.NotificationBadge.num;
+            }
+            else{ numero = 0; }
+            UIApplication.SharedApplication.ApplicationIconBadgeNumber = numero;
             return base.FinishedLaunching(app, options);
         }
     }

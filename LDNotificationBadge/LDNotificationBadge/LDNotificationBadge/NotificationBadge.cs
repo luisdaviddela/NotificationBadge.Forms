@@ -6,6 +6,6 @@ namespace LDNotificationBadge
 {
     public static class NotificationBadge
     {
-        public static int num = 1;
+        public static int num = 6;
     }
 }
