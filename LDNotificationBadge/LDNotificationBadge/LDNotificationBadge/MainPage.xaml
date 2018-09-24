@@ -4,10 +4,10 @@
              xmlns:local="clr-namespace:LDNotificationBadge"
              x:Class="LDNotificationBadge.MainPage">
 
-    <StackLayout>
+    <StackLayout Padding="30" Spacing="10" HorizontalOptions="CenterAndExpand">
         <!-- Place new controls here -->
-        <Label Text="Introduce la cantidad de notificaciones"/>
-        <Entry Placeholder="cantidad ej. 1"/>
+        <Label Text="Introduce la cantidad de notificaciones" />
+        <Entry x:Name="entrycantidad" Placeholder="cantidad "/>
+        <Button Text=" Ok" Clicked="Button_Clicked" />
     </StackLayout>
-
 </ContentPage>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using LDNotificationBadge;
 using Foundation;
 using UIKit;
 
@@ -24,7 +24,7 @@ namespace LDNotificationBadge.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            UIApplication.SharedApplication.ApplicationIconBadgeNumber = 1;
             return base.FinishedLaunching(app, options);
         }
     }
